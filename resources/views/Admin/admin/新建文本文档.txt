@@ -1,0 +1,89 @@
+@extends('Admin.index')
+@section('title','管理员个人资料')
+@section('content')
+
+	<div class="main-content">
+					
+			<div class="profile-user-info profile-user-info-striped">
+
+											@foreach($admins as $v)
+
+												<div class="profile-info-row">
+													<div class="profile-info-name"> 头像： </div>
+
+													<div class="profile-info-value">
+														<span class="editable" id="username">{{ $v->face }}</span>
+													</div>
+													
+												</div>
+
+												<div class="profile-info-row">
+													<div class="profile-info-name"> 编号： </div>
+
+													<div class="profile-info-value">
+														<span class="editable" id="username">{{ $v->aid }}</span>
+													</div>
+												</div>
+
+												<div class="profile-info-row">
+													<div class="profile-info-name"> 昵称： </div>
+
+													<div class="profile-info-value">
+														<i class="icon-map-marker light-orange bigger-110"></i>
+														<span class="editable" id="country">{{ $v->name }}</span>
+													</div>
+												</div>
+
+												<div class="profile-info-row">
+													<div class="profile-info-name"> 性别： </div>
+
+													<div class="profile-info-value">
+														<span class="editable" id="age">{{ $v->face }}</span>
+													</div>
+												</div>
+
+												<div class="profile-info-row">
+													<div class="profile-info-name"> 登录时间： </div>
+
+													<div class="profile-info-value">
+														<span class="editable" id="signup">20/06/2010</span>
+													</div>
+												</div>
+
+											@endforeach
+
+												
+											</div>
+
+					
+		</div><!-- /.main-content -->
+
+@endsection
+
+@section('js')
+<script src="/layer/layer.js"></script>
+<script type="text/javascript">
+
+	// function dele(aid)
+	// {
+	// 	//获取要删除公告的id
+ //            layer.confirm('确定删除此管理员?',{
+ //                //特效层按钮
+ //                btn:['确定','取消']
+ //                },function(){
+ //                    $.post('{{url("/admin/admin/")}}/'+aid,{'_token':'{{csrf_token()}}','_method':'delete'},function(data){
+ //                        if(data == 1){
+	// 						$('#remove'+aid).remove();
+ //                            layer.msg('管理员删除成功!', {icon: 1});
+							
+ //                        }else{
+ //                            layer.msg('管理员删除失败!', {icon: 1});
+ //                        }
+
+ //                    });
+ //                }    
+ //            );
+	// }
+</script>
+
+@endsection
