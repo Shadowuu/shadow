@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+a:link, a:visited { color:#eee}
+a:hover, a:active { color:#eee}
+body, #bodybg {min-height:500px; font-family:"微软雅黑"; color:#eee}
+.bg { position:absolute; z-index:-100; top:0; left:0; width:100%; height:100%; background:#000; filter:alpha(opacity=40); opacity:0.4;}
+.weatherbg { background:none}
+/*登录*/
+.login-logo { display:block; width:320px; height:125px;
+   /* background:url("../images/image-black.png") no-repeat;
+    _background:url("../images/image-black.gif") no-repeat;*/
+    background:url("../images/news-logo.png") no-repeat;
+    _background:url("../images/news-logo.png") no-repeat}
+.login-l{ padding-top:50px;}
+.login-logo .i-xuan { left:115px}
+.login-logo .transparent { position:absolute; z-index:100; top:0; left:0; width:100%; height:100%; background:url("../images/image-black.png") no-repeat 320px 125px;}
+.login-tips { display:none;}
+.login-r{ position:relative; margin-top:30px; width:382px; height:auto; background:none}
+.login-rcon{ margin:0;  width:100%; height:auto; padding:0; background:none;}
+.login-head{ position:relative; width:100%; height:60px; -moz-box-shadow:0px 3px 6px #333333; -webkit-box-shadow:0px 3px 6px #333333; -ms-box-shadow:0px 3px 6px #333333; box-shadow:0px 3px 6px #333333;}
+.login-head .content { padding:12px 0 0 130px; height:36px; line-height:36px;  color:#c1aea5; font-weight:blod; background:url("../images/image-black.png") no-repeat -200px -130px; _background:url("../images/image-black.gif") no-repeat -200px -130px}
+.login-rcon-h { margin:0; width:auto; height:18px; background:none;}
+.login-rcon-m { padding-left:20px}
+.login-rcon-m .title { margin-left:0; width:40px; text-indent:-99999px; text-align:left; font-size:16px; background:url("../images/image-black.png") no-repeat 0 -423px; _background:url("../images/image-black.gif") no-repeat 0 -424px}
+.login-rcon-m .pwd { background-position:0 -462px}
+.login-rcon-m .code, .login-rcon-m .none { background:none}
+.login-rcon-m .detail { border:1px solid #111; padding:0 3px; outline:none; width:280px; height:25px; line-height:25px; vertical-align:middle; color:#fff; background:#111; filter:alpha(opacity=70); opacity:0.7;}
+.login-rcon-m .identify-code { width:90px}
+.login-rcon-m .account-bid { display:none}
+.login-rcon-m .account-bid:hover {}
+.login-rcon-m .account-list { top:32px; border:none; width:69px; right:47px; _right:44px; color:#fff; background:#111; filter:alpha(opacity=70); opacity:0.7;}
+.login-rcon-m .account-list a:hover, .login-rcon-m .account-list .select a{ background:#fff; color:#333}
+.login-rcon-m .identify-img { width:auto; height:25px}
+.login-rcon-m .identify-change { margin-left:10px}
+.login-rcon-text { text-align:center; color:#f90}
+.login-rcon-m .auto-panel label { margin-right:20px;}
+.login-rcon-m .login-btn { width:90px; height:25px; line-height:25px; color:#fff; text-indent:0; font-size:14px; font-weight:bold; outline:none; background:#5697D9; -moz-box-shadow:0px 3px 6px #333333; -webkit-box-shadow:0px 3px 6px #333333; -ms-box-shadow:0px 3px 6px #333333; box-shadow:0px 3px 6px #333333;}
+.login-rcon-m .passer { margin-left:45px; width:auto; *width:120px; color:#adb3b9; font-size:14px; font-weight:bold; line-height:25px}
+.login-rcon-m .experience { display:block; margin:0 auto; width:175px; line-height:26px; background:#ee9230; color:#fff; text-align:center; font-size:14px; font-weight:bold}
+.cooperate { margin:0 0 10px -10px; position:relative; width:402px; height:99px; background:url("../images/image-black.png") no-repeat 0 -320px; _background:url("../images/image-black.gif") no-repeat}
+.login-r .cooperate .bg { display:none; filter:alpha(opacity=10); opacity:0.1;}
+.cooperate-h { padding-top:13px}
+.cooperate-bid { margin-top:3px}
+.cooperate-bid ul { height:45px}
+.cooperate-bid ul li a { height:auto; text-align:center;}
+/*注册*/
+.xuan-register { top:30px; left:auto; right:0; width:530px; height:auto; background:none}
+.register-head{ position:relative; border:none; padding:0; width:100%; height:60px; background:none; -moz-box-shadow:0px 3px 6px #333333; -webkit-box-shadow:0px 3px 6px #333333; -ms-box-shadow:0px 3px 6px #333333; box-shadow:0px 3px 6px #333333;}
+.register-head .content { height:100%;  color:#c1aea5; background:url("../images/image-black.png") no-repeat 20px -180px; _background:url("../images/image-black.gif") no-repeat 20px -180px}
+.register-con { padding-left:20px; width:auto}
+.login-rcon-m .tips { color:#ccc}
+.login-rcon-m a.aid { color:#64f61d}
+#toggleNotice { text-decoration:underline; color:#eee}
+.login-rcon-m .tips.ok { text-indent:-99999px; background:url("../images/image-black.png") no-repeat -300px -250px}
+.login-rcon-m .tips.err { background:url("../images/image-black.png") no-repeat -300px -280px}
+.register-confirm { width:92px; height:25px; line-height:25px; color:#fff; text-indent:0; outline:none; background:#5697D9; -moz-box-shadow:0px 3px 6px #333333; -webkit-box-shadow:0px 3px 6px #333333; -ms-box-shadow:0px 3px 6px #333333; box-shadow:0px 3px 6px #333333;}
+.register-cancel { width:66px; height:25px; line-height:25px; color:#fff; text-indent:0; outline:none; background:#8999A8; -moz-box-shadow:0px 3px 6px #333333; -webkit-box-shadow:0px 3px 6px #333333; -ms-box-shadow:0px 3px 6px #333333; box-shadow:0px 3px 6px #333333;}
+#getXuanID { display:none;}
+#niccXuanID { position:static}
+.login-rcon-m.text { margin-top:-10px; height:auto; line-height:normal;}
+.xuan-register .login-rcon-m .detail { width:188px}
+.xuan-register .login-rcon-m .identify-code { width:60px}
+
+.winning { float:right; margin-top:50px;}

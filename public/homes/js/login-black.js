@@ -1,0 +1,16 @@
+//页面事件绑定。
+(function($){
+	//注册页弹出：
+	$("#login-register,#passer").on("click",function(){
+		$("#login-r").fadeOut();
+	});
+	//注册页关闭：
+	$("#register-cancel").on("click",function(){
+        $("#getXuanID").css({color:"#7CFF48"});
+		$("#xuan-register").show().fadeOut();
+		$("#login-r").fadeIn();
+	});
+	if(location.hash=="#register"){
+		$("#login-r").hide();
+	}
+})(jQuery);

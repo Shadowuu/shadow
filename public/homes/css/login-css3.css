@@ -1,0 +1,196 @@
+﻿@charset "utf-8";
+#tagShow{ display:none; position:absolute; left:50%; margin-left:-520px; top:180px; width: 700px; background: transparent !important; overflow: hidden; }
+#tagShow iframe{ width:640px; height: 600px; margin: -100px 0 0 0; margin-top: -50px \9; background: transparent !important; }
+body{ overflow-y:scroll !important; }
+.login-logo{
+    position: relative;
+}
+.login-logo .i-xuan{
+    position: absolute;
+    left: 128px;
+    top: 0;
+}
+
+@keyframes rotate{
+    0%{ transform:rotate(0); }
+    5%{ transform:rotate(5deg); }
+    10%{ transform:rotate(-5deg); }
+    15%{ transform:rotate(5deg); }
+    20%{ transform:rotate(0deg); }
+}
+@keyframes no-rotate{
+    0%{ transform:rotate(0) scale(1.1); }
+    100%{ transform:rotate(-360deg) scale(1.1); }
+}
+.login-logo .i-xuan{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name:rotate;
+}
+.login-logo .i-xuan:hover{
+    animation-iteration-count: 1;
+    animation-duration: .3s;
+    animation-name: no-rotate;
+}
+
+#tagsList{
+    position: absolute;
+    display: none;
+    left: 50%;
+    margin-left: -336px;
+    width: 500px;
+    height: 640px;
+    z-index: 999;
+    top: 50px;
+}
+#tagsList a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.cssanimations #tagsList a[class]{
+    display: inline;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+#tagsList a img{
+    width: 50px;
+}
+
+
+
+@keyframes path0{
+    0%{ transform: translate(0,0);  }
+    20%{ transform: translate(80px,40px);  }
+    30%{ transform: translate(100px,80px);  }
+    40%{ transform: translate(110px,120px);  }
+    60%{ transform: translate(120px,300px);  }
+    70%{ transform: translate(125px,340px);  }
+    80%{ transform: translate(130px,380px);  }
+    90%{ transform: translate(140px,400px);  }
+    100%{ transform: translate(120px,350px);  }
+}
+
+#tagsList a.path0{
+    animation-name: path0;
+}
+#tagsList a.point0, #tagsList a.point5{
+    left: 120px;
+    top: 350px;
+}
+
+@keyframes path1{
+    0%{ transform: translate(0,0);  }
+    10%{ transform: translate(15px,20px);  }
+    20%{ transform: translate(30px,40px);  }
+    30%{ transform: translate(40px,80px);  }
+    40%{ transform: translate(50px,120px);  }
+    50%{ transform: translate(100px,200px);  }
+    60%{ transform: translate(110px,300px);  }
+    70%{ transform: translate(120px,340px);  }
+    80%{ transform: translate(130px,380px);  }
+    90%{ transform: translate(140px,400px);  }
+    100%{ transform: translate(130px,380px);  }
+}
+
+#tagsList a.path1{
+    animation-name: path1;
+}
+#tagsList a.point1, #tagsList a.point6{
+    left: 130px;
+    top: 380px;
+}
+
+@keyframes path2{
+    0%{ transform: translate(0,0);  }
+    30%{ transform: translate(0,0);  }
+    40%{ transform: translate(0px,120px);  }
+    50%{ transform: translate(-10px,200px);  }
+    60%{ transform: translate(40px,300px);  }
+    70%{ transform: translate(60px,340px);  }
+    80%{ transform: translate(105px,380px);  }
+    90%{ transform: translate(140px,340px);  }
+    100%{ transform: translate(150px,330px);  }
+}
+
+#tagsList a.path2{
+    animation-name: path2;
+}
+#tagsList a.point2, #tagsList a.point7{
+    left: 150px;
+    top: 330px;
+}
+
+
+@keyframes path3{
+    0%{ transform: translate(0,60px);  }
+    5%{ transform: translate(10px,40px);  }
+    18%{ transform: translate(70px,100px);  }
+    24%{ transform: translate(80px,70px);  }
+    38%{ transform: translate(0px,120px);  }
+    50%{ transform: translate(40px,20px);  }
+    100%{ transform: translate(50px,120px);  }
+}
+
+#tagsList a.path3{
+    animation-name: path3;
+}
+#tagsList a.point3, #tagsList a.point8{
+    left: 50px;
+    top: 120px;
+}
+
+
+@keyframes path4{
+    0%{ transform: translate(0,0);  }
+    11%{ transform: translate(100px,20px);  }
+    18%{ transform: translate(40px,60px);  }
+    34%{ transform: translate(80px,72px);  }
+    40%{ transform: translate(50px,120px);  }
+    55%{ transform: translate(92px,200px);  }
+    65%{ transform: translate(150px,333px);  }
+    73%{ transform: translate(120px,380px);  }
+    82%{ transform: translate(130px,340px);  }
+    91%{ transform: translate(140px,400px);  }
+    100%{ transform: translate(80px,280px);  }
+}
+
+#tagsList a.path4{
+    animation-name: path4;
+}
+#tagsList a.point4, #tagsList a.point9{
+    left: 80px;
+    top: 280px;
+}
+
+
+#tagsList a.path5{
+    animation-name: path0;
+    animation-delay: .2;
+}
+#tagsList a.path6{
+    animation-name: path1;
+    animation-delay: .5;
+}
+#tagsList a.path7{
+    animation-name: path2;
+    animation-delay: .1;
+}
+#tagsList a.path8{
+    animation-name: path3;
+    animation-delay: .4;
+}
+#tagsList a.path9{
+    animation-name: path4;
+    animation-delay: .2;
+}
+
+
+
+
+
+
+
+
